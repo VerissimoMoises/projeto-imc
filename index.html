@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tabela IMC</h1>
+    <div class="listas">
+      <div class="lista1">
+      <h3 class="lista1-titulo">IMC</h3>
+      <ul class="lista1">
+        <li class="lista1-lista">Menor que 18,5</li>
+        <li class="lista1-lista">Entre 18,5 e 24,9</li>
+        <li class="lista1-lista">Entre 25 e 29,9</li>
+        <li class="lista1-lista">Entre 30 e 39,9</li>
+        <li class="lista1-lista">Mais que 40</li>
+      </ul>
+      </div>
+      <div class="lista2">
+      <h3 class="lista2-titulo">Resultado</h3>
+      <ul class="lista2">
+        <li class="lista2-lista">Magreza</li>
+        <li class="lista2-lista">Normal</li>
+        <li class="lista2-lista">Sobrepeso</li>
+        <li class="lista2-lista">Obesidade</li>
+        <li class="lista2-lista">Obesidade grave</li>
+      </ul>
+    </div>
+    <div class="lista3">
+      <h3 class="lista3-titulo">Obesidade(GRAU)</h3>
+      <ul>
+        <li class="lista3-lista">o</li>
+        <li class="lista3-lista">o</li>
+        <li class="lista3-lista">I</li>
+        <li class="lista3-lista">II</li>
+        <li class="lista3-lista">III</li>
+      </ul>
+    </div>
+    </div>
+    <p class="ref">
+      Classificão de IMC segundo a OMS.
+    </p>
+    <h1>Calcule seu IMC</h1>
+    <form action="/" id="form" method="POST">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
